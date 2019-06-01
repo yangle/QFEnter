@@ -227,6 +227,9 @@ function! s:OpenQFItem(wintype, opencmd, qflnum)
 		call s:ExecuteCP(lnumqf, isloclist)
 	endif
 
+	" vertically center the selected item
+	norm zz
+
 	" check if switchbuf applied.
 	" if useopen or usetab are applied with new window or tab command, close
 	" the newly opened tab or window.
